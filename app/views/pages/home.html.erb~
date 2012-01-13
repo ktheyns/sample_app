@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sample App | <%= @title %></title>
-  </head>
+
   <body>
     <h1>Sample App</h1>
     <p>
@@ -10,6 +6,5 @@
       <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
       sample application.
     </p>
-  </body>
-</html>
+
 
