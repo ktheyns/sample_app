@@ -10,7 +10,8 @@
       <%= render 'layouts/header' %> #we've replaced the stylesheet lines with a 					single call to the rails helper: render
       <section class="round">
         <%= yield %>
-      </section>
+	</section>
+	<%= render 'layouts/footer' %>
     </div>
   </body>
 </html>
