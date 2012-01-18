@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #fff;
+  background: #000;
 }
 
 header {
@@ -12,18 +12,21 @@ header {
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  horizontal-align: center;
 }
 
 section {
   margin-top: 1em;
-  font-size: 220%;
+  font-size: 150%;
   padding: 20px;
-  background: #21f;
+  background: #33f;
 }
 
 section h1 {
-  font-size: 200%;
+  font-size: 180%;
 }
 
 /* Links */
@@ -31,15 +34,16 @@ section h1 {
 a {
   color: #09c;
   text-decoration: none;
+  font-size: 130%;
 }
 
 a:hover {
-  color: #069;
+  color: #90c;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #0f9;
+  color: #909;
 }
 
 /*Makes the sign up button*/
@@ -51,7 +55,7 @@ a.signup_button {
   width: 190px;
   color: #fff;
   background: #2E0854; #makes it purple
-  font-size: 150%;
+  font-size: 100%;
   font-weight: bold;
   padding: 20px;
 }
@@ -75,6 +79,30 @@ footer {
 
 footer nav {
   float: none;
+}
+
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
 }
 
 
