@@ -1,3 +1,4 @@
+
 require 'spec_helper'
 
 describe UsersController do
@@ -99,6 +100,13 @@ describe UsersController do
         	flash[:success].should =~ /welcome to the sample app/i#checking 								for the words in									 success
      	  end
 
+
+      	it "should sign the user in" do
+        	post :create, :user => @attr
+        	controller.should be_signed_in
+      	end
+
+
        end
     
 
@@ -106,4 +114,6 @@ describe UsersController do
 
   
 end
+
+
 
