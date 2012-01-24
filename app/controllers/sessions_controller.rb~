@@ -14,8 +14,8 @@ def create
     # Create an error message and re-render the signin form.
   else
       sign_in user
-      redirect_to user	  
-    # Sign the user in and redirect to the user's show page.
+      redirect_back_or user	  
+    # Sign the user in,redirect to the user's show page or to the url wanted.
   end
 end
 
