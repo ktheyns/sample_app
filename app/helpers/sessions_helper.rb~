@@ -27,7 +27,12 @@ module SessionsHelper
 
   def current_user?(user)
     user == current_user
-  end  
+  end
+
+  def authenticate
+    deny_access unless signed_in?
+  end
+  
 
   def deny_access
     store_location #calls metd to put req. url in :return_to => session variable
