@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #002;
+  background: #002;/*Dark purple/blue*/
   color: #0bd;
 }
 
@@ -23,8 +23,9 @@ header img {
 
 section {
   margin-top: 1em;
-  font-size: 170%;
-  color: #81a;
+  font-size: 120%;
+  color: #000; /*Black*/
+  /*color: #81a; Purple*/
   padding: 20px;
   background: #33f;
 
@@ -38,10 +39,10 @@ section h1 {
 /* Links */
 
 a {
-  color: #09c;
+  color: #000099;/*CHANGED*/
   text-decoration: none;
   font-size: 130%;
-  text-align: right;
+  /*text-align: right;*/
 }
 
 a:hover {
@@ -50,8 +51,43 @@ a:hover {
 }
 
 a:visited {
-  color: #909;
+  color: #0dc;
 }
+
+
+/* Navigation */
+
+nav {
+  float: right;
+  background: #002;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 
 /*Makes the sign up button*/
 a.signup_button {
@@ -104,7 +140,10 @@ td.sidebar {
   width: 30%;
   padding: 1em;
   vertical-align: top;
-  background: #ffc;
+  font-size: 90%;/*CHANGE*/
+  font-weight: bold;
+  color: #000;
+  background: #0099ff;/*CHANGE*/
 }
 
 .profile img.gravatar {
@@ -126,6 +165,9 @@ ul.users {
 
 .users li {
   list-style: none;
+  font-size: 90%;/*CHANGE*/
+  font-weight: bold;
+  color: #000
 }
 
 /* Error styling */
@@ -138,7 +180,7 @@ ul.users {
 }
 
 .field_with_errors label {
-  color: #fff;
+  color: #0dc;
 }
 
 #error_explanation {
@@ -167,8 +209,70 @@ ul.users {
 }
 
 #error_explanation ul li {
-  font-size: 12px;
+  font-size: 25px;
   list-style: square;
 }
 
+/* Microposts */
+
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  horizontal-align: center;/*CHANGE*/
+  color: #0dc;/*Turquoise*/
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+  font-size: 85%;
+  horizontal-align: center;/*CHANGE*/
+  color: #000;/*Turquoise*/
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+  text-align: center;/*CHANGE*/
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
 
